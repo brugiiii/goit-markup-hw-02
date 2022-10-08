@@ -1,6 +1,221 @@
-/* Основний колір тексту #212121;
-Другорядний колір тексту #757575; 
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --button-bg: #f5f4fa;
+  --footer-addres-color: rgba(255, 255, 255, 0.6);
+  --secondary-bg-color: #2f303a;
+}
+
+/* Утиліта */
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Основний колір тексту #757575;
+Другорядний колір тексту #212121; 
+Білий колір тексту #FFFFFF
+Акцент #2196F3;
+Адрес у футері rgba(255, 255, 255, 0.6);
 Основний колір фону #FFFFFF; (Білий)
 Другорядний колір фону #F5F4FA;  
-header and footer bg #2F303A;
-Акцент #2196F3;*/
+hero and footer bg #2F303A;
+*/
+
+body {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* logo */
+.logo {
+  color: var(--black-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-first-part {
+  color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+
+.footer .logo {
+  color: var(--white-color);
+}
+
+.footer .logo:hover,
+.footer .logo:focus {
+  color: var(--accent-color);
+}
+
+/* header navigation */
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* header address */
+.address .mail,
+.address .tel {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+}
+
+.address .tel:hover,
+.address .tel:focus,
+.address .mail:hover,
+.address .mail:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+.hero {
+  background-color: var(--secondary-bg-color);
+}
+.hero .hero-title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero .hero-button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--title-text-color);
+  background-color: var(--button-bg);
+}
+/* section */
+.section-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.17px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* .benefits-list */
+.benefits-list .title {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* team-list */
+.team-list-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19px;
+  letter-spacing: 0.03em;
+}
+
+.team-list-text {
+  font-size: 16px;
+  line-height: 1.19px;
+  letter-spacing: 0.03em;
+}
+
+/* footer */
+
+footer {
+  background-color: var(--secondary-bg-color);
+}
+.footer-address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-address .street {
+  color: var(--white-color);
+}
+
+.footer-address .mail,
+.footer-address .tel {
+  color: var(--footer-addres-color);
+}
+
+.footer-address .mail:hover,
+.footer-address .mail:focus,
+.footer-address .tel:hover,
+.footer-address .tel:focus,
+.footer-address .street:hover,
+.footer-address .street:focus {
+  color: var(--accent-color);
+}
+
+/* page portfolio */
+/* filter */
+.filter .button {
+  color: var(--title-text-color);
+  background-color: var(--button-bg);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.filter .button:hover,
+.filter .button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+/* works */
+.works-title {
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works-text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.88px;
+  letter-spacing: 0.03em;
+}
